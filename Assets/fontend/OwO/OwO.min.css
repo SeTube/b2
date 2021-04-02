@@ -50,7 +50,7 @@
 }
 .OwO.OwO-open .OwO-logo {
 	border-radius:4px 4px 0 0;
-	border-bottom:none;
+	border-top: none;
 	color:#6d757a;
 }
 .OwO.OwO-open .OwO-body {
@@ -76,7 +76,7 @@
 	background:#fff;
 	border:1px solid #ddd;
 	z-index:6;
-	top:27px;
+	bottom: 25px;
 	border-radius:0 4px 4px 4px;
 }
 .OwO .OwO-body .OwO-items {
@@ -232,7 +232,7 @@
     }
     /*小黄脸*/
     .OwO .OwO-body .OwO-items .OwO-item.xhl {
-        margin: 0 9px 0.1px 0;
+        margin: 0 11px 0.1px 0;
     }
     .OwO .OwO-body .OwO-items .OwO-item.xhl img {
     	width:22px;
@@ -247,23 +247,23 @@
     }
     /*崩坏3*/
     .OwO .OwO-body .OwO-items .OwO-item.bh3 {
-        margin: 0 17px 9.5px 0;
+        margin: 0 15px 9.5px 0;
     }
     /*蛆音娘* *洛天依*/
     .OwO .OwO-body .OwO-items .OwO-item.qyl, .OwO .OwO-body .OwO-items .OwO-item.lty {
-        margin: 0 18px 9.5px 0;
+        margin: 0 15px 9.5px 0;
     }
     /*罗小黑*/
     .OwO .OwO-body .OwO-items .OwO-item.lxh {
-	margin: 0px 17px 11px 0;
+	margin: 0px 15px 11px 0;
 	}
     /*小A和小B*/
     .OwO .OwO-body .OwO-items .OwO-item.dbxb{
-        margin: 5px 17px 4px 0;
+        margin: 5px 15px 4px 0;
     }
     /*红小豆*/
     .OwO .OwO-body .OwO-items .OwO-item.hxd {
-        margin: 0 17px 10px 0;
+        margin: 0 15px 10px 0;
     }
     .b2-smilies[src^="//cdn.jsdelivr.net/gh/finest-cy/b2@main/Assets/fontend/OwO/images"] {
         height: 36px!important;
