@@ -321,7 +321,8 @@ var userTools = new Vue({
             location.reload()
         },
         out(){
-            this.loginOut()
+            this.loginOut();
+            location.reload();
         },
         goUserPage(type){
             if(type === 'back'){
