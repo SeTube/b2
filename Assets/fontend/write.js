@@ -531,7 +531,7 @@
                 let tq = document.querySelector('#fileTq').value
                 let jy = document.querySelector('#fileJy').value
 
-                tinymce.activeEditor.insertContent('<p>[b2_file link="'+link+'" name="'+name+'" pass="'+tq+'" code="'+jy+'"]</p>')
+                tinymce.activeEditor.insertContent('<p>[b2_content_hide][b2_file link="'+link+'" name="'+name+'" pass="'+tq+'" code="'+jy+'"][/b2_content_hide]</p>')
 
                 this.showFileBox =false
                 
@@ -571,9 +571,9 @@
             excerpt:'',
             custom:[],
             show:{
-                'tag':true,
-                'role':false,
-                'excerpt':false
+                'tag':b2_global.show_tag,
+                'role':b2_global.show_role,
+                'excerpt':b2_global.show_excerpt,
             },
             customSettings:[],
             locked:false
