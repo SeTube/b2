@@ -171,12 +171,12 @@
           tinymce.init({
             selector: '#mytextarea',
             body_class:'entry-content',
-            content_css:b2_global.site_info.site_uri+'/Assets/fontend/style.css',
+            content_css:b2_global.version+'/Assets/fontend/style.css',
             icons: 'b2',
             content_style: "body {padding: 10px}",
             body_style: '.entry-content {margin:16px}',
             language:'zh_CN',
-            base_url: b2_global.site_info.site_uri+'/Assets/fontend/library/tinymce',
+            base_url: b2_global.version+'/Assets/fontend/library/tinymce',
             suffix: '.min',
             statusbar: false,
             menubar:false,
@@ -475,12 +475,12 @@
                         src = src.split("\n")
                         if(src.length > 0){
                           for (let i = 0; i < src.length; i++) {
-                            html += '<p><img src="'+src[i]+'" /></p>';
+                            html += '<figure class="content-img-box"><img class="aligncenter loading" src="'+src[i]+'" "alt="'+writeHead.$refs.writeTitle.value+'" title="'+writeHead.$refs.writeTitle.value+'" /><figcaption class="addDesn"></figcaption></figure>';
                           }
                         }
                     }else{
                         for (let i = 0; i < this.imagePicked.length; i++) {
-                            html += '<p><img src="'+this.imagePicked[i]+'" /></p>';
+                            html += '<figure class="content-img-box"><img class="aligncenter loading" src="'+this.imagePicked[i]+'" alt="'+writeHead.$refs.writeTitle.value+'" title="'+writeHead.$refs.writeTitle.value+'" /><figcaption class="addDesn"></figcaption></figure>';
                         }
                     }
 
@@ -571,7 +571,7 @@
             excerpt:'',
             custom:[],
             show:{
-                'tag':false,
+                'tag':true,
                 'role':false,
                 'excerpt':false
             },
