@@ -215,13 +215,13 @@
                 tooltip:'insert shot code Text',
                 fetch:(callback)=>{
                   var items = [
-                    {
-                      type: 'menuitem',
-                      text: 'insert hidden content',
-                      onAction: function () {
-                        editor.insertContent('<p>[content_hide]</p><p>请在这里编辑您的隐藏内容</p><p>[/content_hide]</p>');
-                      }
-                    },
+                      {
+                          type: 'menuitem',
+                          text: 'Insert File',
+                          onAction: ()=>{
+                            this.showFileBox = true
+                          }
+                        },
                     {
                       type: 'menuitem',
                       text: 'Insert Post',
@@ -231,9 +231,9 @@
                     },
                     {
                       type: 'menuitem',
-                      text: 'Insert File',
-                      onAction: ()=>{
-                        this.showFileBox = true
+                      text: 'insert hidden content',
+                      onAction: function () {
+                        editor.insertContent('<p>[b2_content_hide]</p><p>请在这里编辑您的隐藏内容</p><p>[/b2_content_hide]</p>');
                       }
                     },
                   ];
