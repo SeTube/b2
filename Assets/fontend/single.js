@@ -185,9 +185,9 @@ var postType5 = new Vue({
                             }
                         })
 
-//                         this.player.on('playing',()=>{
-//                             document.getElementById('post-style-5-player').querySelectorAll('.dplayer-video-current')[0].style="object-fit:contain"
-//                         })
+                        this.player.on('playing',()=>{
+                            document.getElementById('post-style-5-player').querySelectorAll('.dplayer-video-current')[0].style="object-fit:contain"
+                        })
 
                         // this.player.on('canplay', ()=>{
 
@@ -201,7 +201,7 @@ var postType5 = new Vue({
     methods:{
         select(index){
             this.index = index
-//             document.getElementById('post-style-5-player').querySelectorAll('.dplayer-video-current')[0].style="object-fit:cover"
+            document.getElementById('post-style-5-player').querySelectorAll('.dplayer-video-current')[0].style="object-fit:cover"
             if(this.user.allow){
                 this.url = this.videos[index].url
             }else{
@@ -541,8 +541,8 @@ Vue.component('poster-box', {
     watch:{
         show(val){
             if(val && !this.loadedjs){
-                b2loadScript(b2_global.site_info.site_uri+'/Assets/fontend/library/html2canvas.min.js','',()=>{
-                    b2loadScript(b2_global.site_info.site_uri+'/Assets/fontend/library/canvas2image.min.js','',()=>{
+                b2loadScript(b2_global.version+'/Assets/fontend/library/html2canvas.min.js','',()=>{
+                    b2loadScript(b2_global.version+'/Assets/fontend/library/canvas2image.min.js','',()=>{
                         this.loadedjs = true
                         let img = new Image()
                         img.src = this.data.thumb;
@@ -1134,12 +1134,12 @@ function b2VideoReset(){
                         url: data.url,
                         pic: data.poster,
                     },
-                    logo:data.logo ? data.logo : b2_global.site_info.site_uri+'/Assets/fontend/images/xg-logo-default.png',
+                    logo:data.logo ? data.logo : b2_global.version+'/Assets/fontend/images/xg-logo-default.png',
                     autoplay:false
                 });
-//                 player[i].on('play',()=>{
-//                     videos[i].querySelectorAll('.dplayer-video-current')[0].style="object-fit:contain"
-//                 })
+                player[i].on('play',()=>{
+                    videos[i].querySelectorAll('.dplayer-video-current')[0].style="object-fit:contain"
+                })
             }
         }
     }
