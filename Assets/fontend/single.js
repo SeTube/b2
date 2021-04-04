@@ -201,7 +201,7 @@ var postType5 = new Vue({
     methods:{
         select(index){
             this.index = index
-            document.getElementById('post-style-5-player').querySelectorAll('.dplayer-video-current')[0].style="object-fit:cover"
+            document.getElementById('post-style-5-player').querySelectorAll('.dplayer-video-current')[0].style="object-fit:contain"
             if(this.user.allow){
                 this.url = this.videos[index].url
             }else{
