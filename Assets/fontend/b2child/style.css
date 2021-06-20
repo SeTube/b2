@@ -1,0 +1,95 @@
+/*首页栏目导航条样式*/
+.post-modules-top .modules-title-box {
+    padding: 8px 0;
+}
+.post-list-cats {
+    padding: 8px 0;
+    flex: 1;
+}
+.post-list-cats {
+    background-color: #fff0;
+}
+.post-list .module-title {
+    font-size: 22px;
+    font-weight: 400;
+}
+.post-list-cats a:before {
+    content: none;
+}
+.exchange-btn{
+    position: absolute;
+    right: 0;
+    z-index: 11;
+    display: flex;
+}
+
+.exchange-btn .btn-change-icon{
+    width: 72px;
+    cursor: pointer;
+    display: flex;
+}
+.exchange-btn .btn-change-icon .btn-change{
+    width: 100%;
+    z-index: 1;
+    padding-left: 16px;
+}
+.exchange-btn .btn-change-icon i{
+    /*animation:quan .8s linear infinite;*/
+    position: absolute;
+    margin-left: 6px;
+    transition: all .5s;
+    font-size: 13px;
+}
+.exchange-btn .btn-change-icon:hover i{
+    transform: rotate(-1turn);
+}
+.exchange-btn .btn{
+    padding: 0 0 0 12px;
+    width: 58px;
+    display: flex;
+}
+
+.exchange-btn .btn,.exchange-btn .btn-change-icon{
+    height: 22px;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #505050;
+    line-height: 22px;
+    margin-right: 10px;
+     transition: all .5s;
+}
+.exchange-btn .btn-change-icon .quan{
+    animation:quan .8s linear infinite;
+}
+@keyframes quan{
+    0%{transform:rotate(1turn)}
+    25%{transform:rotate(270deg)}
+    50%{transform:rotate(180deg)}
+    75%{transform:rotate(90deg)}
+    to{transform:rotate(0deg)}
+}
+@media screen and (min-width: 768px){
+    .post-modules-top {
+    flex-flow: initial;
+}
+.exchange-btn .btn:hover,.exchange-btn .btn-change-icon:hover {
+    border: 1px solid #00a1d6;
+    color: #00a1d6;
+}
+}
+@media screen and (max-width: 768px){
+.home-row-left .modules-title-box {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+}
+.post-list-cats {
+    padding: 0!important;
+    flex: 1;
+}
+}
