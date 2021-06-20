@@ -93,3 +93,6 @@
     flex: 1;
 }
 }
+.load-more.load-more-hidden {
+    display: none;
+}
