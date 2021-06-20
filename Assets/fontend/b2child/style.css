@@ -93,6 +93,6 @@
     flex: 1;
 }
 }
-.load-more.load-more-hidden {
+.module-posts .wrapper .post-list .load-more {
     display: none;
 }
