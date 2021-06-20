@@ -1,0 +1,561 @@
+.router-link-exact-active{
+    color: #f44336;
+}
+#colophon,#mobile-footer-menu{
+    display: none;
+}
+body {
+    overflow-x:visible;
+}
+.site{
+    background-color:#f4f5f7;
+}
+
+@media (max-width: 768px){
+.site-header {
+    height: 77px;
+}
+.mg-b {
+    margin-bottom: 0;
+}
+}
+.site .site-header-in {
+    box-shadow: none;
+}
+#app{
+    margin-top:0px;
+}
+input[type="text"]{
+    border: none;
+}
+
+.van-image img{
+    border-radius: 4px;
+}
+/**导航**/
+.navbar {
+    height: 50px;
+    padding: 0 10px 0 10px;
+    background: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+}
+.navbar i{
+	font-size:22px
+}
+.navbar .search{
+    background-color: #f4f4f4;
+    height: 7.5vw;
+    width: 45vw;
+    border-radius: 4px;
+    position: relative;
+}
+.navbar .search .iconNav {
+    color: #aaa;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    font-size: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@media (min-width: 1414px){
+    .navbar .search {
+        width: 400px;
+        height: 35px;
+    }
+}
+/**搜索页面**/
+.search-hot {
+    /* margin-top: 3.73333vw; */
+    margin-bottom: 25px;
+    padding: 20px 10px 0;
+}
+.search-hot .title {
+    color: #999;
+    font-size: 15px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 50px;
+}
+.search-hot .list {
+    
+}
+.search-hot .list span{
+    background: #f4f4f4;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    margin: 0 15px 10px 0;
+}
+.search-history {
+    /* border-top: 2.66667vw solid #f4f4f4; */
+}
+
+.search-history .title {
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    font-weight: 400;
+    color: #999;
+    font-size: 15px;
+}
+.search-history .history-list {
+    padding-left: 10px;
+}
+.search-history .history-list li {
+    background: #f4f4f4;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    margin: 0 15px 10px 0;
+}
+.search-history .clear-history {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.search-history .clear-history span {
+    font-size: 15px;
+    color: #999;
+}
+
+/*分类页*/
+.filter-box .filter-item {
+    height: 44px;
+    line-height: 44px;
+    display: flex;
+}
+.filter-box .filter-item .filter-box--type {
+    width: 65px;
+    flex: none;
+    font-size: 14px;
+    text-align: right;
+}
+.filter-item .filter-item-col {
+    flex: 1;
+    overflow: hidden;
+}
+.filter-box .filter-item-col .van-tab {
+    width: auto;
+    flex: none;
+    padding: 0 15px;
+}
+.filter-box .van-tabs__wrap .van-tab--active .van-tab__text {
+    color: #ee0a24;
+}
+/*详情页*/
+.box-common {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.detail-box .bd {
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-box .video-detail-item {
+    display: flex;
+    padding: 8px;
+    position: relative;
+}
+.detail-box .video-thumb {
+    max-width: 160px;
+}
+.detail-box .video-thumb-wrapper {
+    position: relative;
+    line-height: 0;
+}
+.detail-box .video-thumb img {
+    width: 100%;
+    border-radius: 4px;
+}
+.detail-box .video-thumb span {
+    position: absolute;
+    bottom: .125rem;
+    right: .125rem;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.65);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: auto;
+    max-width: 84%;
+}
+.detail-box .video-detail {
+    flex: 1;
+    padding: 0 0 0 10px;
+}
+.detail-box .video-detail h5 {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+    color: #f4f5f7;
+}
+
+.detail-box .video-detail p {
+    font-size: 14px;
+    color: #f4f5f7;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.detail-box .videos-description {
+    font-size: 14px;
+    padding: 10px;
+    line-height: 1.7;
+    position: relative;
+    color: #999;
+    height: 84px;
+    overflow: hidden;
+}
+.detail-box .videos-description .videos-description-title {
+    font-weight: bold;
+}
+.detail-box .videos-description.videos-description--active {
+    height: auto;
+}
+.detail-box .videos-description .more-info {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+.detail-box .videos-description .more-info .c-more-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    color: #f4f5f7;
+    width: 50px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.5);
+    margin: 0px 0px 0px;
+}
+.detail-box .videos-description .c-more-link:before,
+.detail-box .videos-description.videos-description--active .c-more-link:before {
+    content: "展开";
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 3px 0;
+}
+.detail-box .videos-description.videos-description--active .c-more-link:before {
+    content: "收起";
+}
+.detail-box .videos-description .more-info .c-more-link .van-icon {
+    color: #f4f5f7;
+    vertical-align: -2px;
+    padding: 0 5px;
+}
+.detail-box .videos-description.videos-description--active .more-info .c-more-link .van-icon {
+    transform: rotate(-180deg);
+}
+
+/**详情页选集**/
+.ep-list-pre-wrapper {
+    padding: 10px 10px;
+    background-color: #fff;
+    margin-top: 1px;
+}
+.ep-list-pre-wrapper .ep-list-pre-header {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+    overflow: hidden;
+}
+.ep-list-pre-wrapper .ep-list-pre-header .ep-list-pre-title {
+    float: left;
+    font-weight: 700;
+}
+.ep-list-pre-wrapper .ep-list-pre-header i {
+    position: relative;
+    display: block;
+    float: right;
+    height: 100%;
+    font-size: 13px;
+    color: #999;
+    font-style: normal;
+}
+.ep-list-pre-wrapper .ep-list-pre-body {
+    margin: 0 -10px;
+}
+.episode-item{
+    border: 1px solid #ccc;
+    margin-right: 12px;
+    border-radius: 5px;
+}
+.ep-list-pre-body .van-grid-item__content {
+    padding: 8px;
+}
+
+
+/**详情播放相关推荐**/
+.season-slideer-wrapper{
+    padding: 10px;
+    background-color: #fff;
+}
+
+.season-slideer-wrapper .slider-wrapper {
+    position: relative;
+    width: 100%;
+}
+.slider-wrapper .slider-content {
+    overflow: hidden;
+}
+.season-slideer-wrapper .season-slider-list {
+    height: 36px;
+    white-space: nowrap;
+    transition: transform .3s ease;
+}
+.season-slideer-wrapper .season-slider-list span:first-child {
+    border-radius: 4px 0 0 4px;
+    margin-left: 0;
+}
+.season-slideer-wrapper .season-slider-list span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 14px 0 10px;
+    line-height: 34px;
+    height: 36px;
+    border-top: 1px solid #e5e9ef;
+    border-bottom: 1px solid #e5e9ef;
+    background-color: #f4f5f7;
+    min-width: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #222;
+    padding: 0 15px;
+}
+.season-slideer-wrapper .season-slider-list span:first-child::before {
+    background: #f4f5f7;
+    border: 1px solid #e5e9ef;
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+    left: 0;
+    background: none;
+}
+.season-slideer-wrapper .season-slider-list span::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: -1px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAkCAYAAABfVsDFAAAAAXNSR0IArs4c6QAAAfRJREFUOBGNk81u00AQx2fW65jEVSRIgsqlHHkCXgCJCxdegba3SlUrHgSEQFyQaA+8CK8ALwAH8mVVbba0aez1DrMmTnZrO+1ePDvzm//MrHcReI2ms1eG6JTNgd03LbSBP5OLafwgHEgpmrjCX0YFiiLvblgI+Jpps9hIcvC/sow+p5kx94KfPGz/AqDvnLCRL3u20IdFpi830d5Uw2T2uxPJHRm4Gut030vwLsvoah32LQ+Ogu5JlmskQz613Hlwr4cKSHzLcqPraA+2gAjFp5tUp/eCtx9t/STCH5nOK3xFuVBH8T7VRt2mvaMrg0QUjBI1jtthP3DuTK0yIuaI8DFNzbwUKCq6G9eWIL+kOvcq1yrbpMEgHiHQhXvkjbBNIAQNtP5BjbBSqoeAfXHXgFb1ag77/My8O+sNYCG7+OhwnKhhpy23A35G5VpbpYe/07PL11y+44I2XAvzAzsOQ9F18guzAieJekZAz1syuM1WlTXRYdSSYYVkhzfgmCjOp7NJN27F/MsrvNcGJWqXe6U60GZ6MO/fcq9bFcmlYwVPzv6+5Mr9ppdt+RVs8vwoimSj6goens+fGsAXrFqdatnCCka9OGiF7pVxCMcs2uA/thdJETn+WrOAubYx7i2vRQGk9fO5vrle6FO6occNXOH+Bwb4n8RqXkuaAAAAAElFTkSuQmCC) no-repeat;
+    width: 10px;
+    height: 36px;
+    z-index: 10;
+}
+.season-slideer-wrapper .season-slider-list span::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: -1px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAkCAYAAABfVsDFAAAAAXNSR0IArs4c6QAAAfVJREFUOBGF1b1uE0EQAOCZ/fFZcWIJGScRDR0SouAV6HgBJKSUVEGKhHgEeigIUsQTUEDJO9AhGpBoEcKxk5jYju3z3f5l5hQj29zdbuG73f12vLO7dwd/BiNzej7+3j8bPYVYmc7SMJrMw+nZaN47H7+s88iYgfMBZqmZaVT3ut1Wr2yQWDZKgaCVlMbbw2Xb5vUf5o6GFk0QcBRCUJuQ62uYo0tEObiYPIliBg0t25REaaJrkRlrVTQ9GFxOH3J9tfyHuTPRMnHGHq1Cvi/FSglO8GA4DO3VAaVYIC2jFCHzk2dRzIASbdFlLdHSyIylFIAAt3rD8WOuc6nE3Nls6G1w8ILvudRipWjygI96l+ndKCYJWguBxjyPYgaJEglAOKTzgrXTKKLReaFMsf93ej+KiwGIHoPfiWL6e34wmnud9rcoNtY7iv4REfMoznK7AFTHxXT4p6oY5yEg/rzTbX1lUxs5y+wVgTfLYJWYn3YPYPZutz9FcW78glb4HSVmazGtFhhrgwzy/RLytXQalJinTfu8u7vdj2JarrmQ+HYVlka2ltIC+EU79iWKc+uuaHFfb0Kur83Z03JRXmG/u/MhinPrM0A84XNQi3kTMuNcItVJGeS24m1pXYB0kaciiFedztbvKgw3n4kf9NY/qEQ3Hdf5GsAxnUDMHAAAAABJRU5ErkJggg==) no-repeat;
+    width: 13px;
+    height: 36px;
+    z-index: 10;
+}
+/**选中**/
+.season-slideer-wrapper .season-slider-list span.router-link-active:first-child:before {
+    background: #00a1d6;
+    border: 1px solid #00a1d6;
+    border-right: none;
+    box-sizing: border-box;
+    border-radius: 4px 0 0 4px;
+}
+.season-slideer-wrapper .season-slider-list span.router-link-active {
+    background-color: #00a1d6;
+    border-color: #00a1d6;
+    color: #fff;
+}
+
+.season-slideer-wrapper .season-slider-list span.router-link-active:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAkCAYAAABfVsDFAAAAAXNSR0IArs4c6QAAAY9JREFUOBGNlLtKA1EQhmdWAxZiZaegIBiStxArwVoQUbESjY+jiGIju7GwsvEBfAfBbOEFJAjBFBZC1M2Oc/Yk57bn6G6RzPzzzfDPZAmCeJJ0DfL8HIjmizzwERV6BVBwEibAwDBLljBS21IDiYRreAqAeYBRsoQ3Gy9s5FapgUDCohjBcYBRsl6MCCHudPh8y6rqBHoyIrHvE6dupRoW8lTtkr1/WoSR2PDG0gfXYqNuhTYsS0ErZXineQ+Id9bIUVKGRSFC7xn98Fz9hi/Tdaf74RXMAOisGlxYgYvq8HbzjRd9Nhv8NsYEEdvRj343tCajq3QWsrzH74piJl1G5T+0x0sqUOh+G0Ss06FqHAV+OEnXGV6sBhMduaDILU8FEHfqvNSDudi4sWyDqOUDy5Ove9Mw6HcZnhlPM7/t0w3ed4HAC4om10bLnOTGGk7SVZ7acAEz13A+9J7LhOXp2k8LMPx65MUmzKIbywWz7wP+xf4ERaO0gbTlTvHlI8/07z+oMTna5+TVN83UfgHSn2di/gIipwAAAABJRU5ErkJggg==) no-repeat;
+}
+.season-slideer-wrapper .season-slider-list span.router-link-active:after {
+    left: auto;
+    margin-left: 0;
+    border: none;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAkCAYAAABfVsDFAAAAAXNSR0IArs4c6QAAAYVJREFUOBGN0r9KA0EQBvBvloQoCoJYiI0IKkkKG23trMTKQhAJCoKKWvgA1hZipyDBKqJGI76GNmoh5g+CNhZa+AA5zty4G12ZJHfJHmxmyP72Y245Qq5cBfAMRfvIJAu6j3wUwAm9JhEEVzgt7URKvaGxfGgP+cqQ/Ef2jZi5Gz6vSyD7Rmx2mNdwz3GJbN+KgUEUX+YtkDUMA1Tbksj24ZgxjYvKhEW2hmOz+80t6dEYvITCa59NNTUaM3rg+Stu2CjmTb3IHohO/sXjOCvPuGGjAtp2x8Aczt+GzYH2Y9QjWaHmbThizRir+kUVIVfiekCnH4qlHcb4S1Hc64ipin715IiRx+yY54YVH5lhYp3eC0S3yKQejXNI5kMb2D6Z6APp5I3F7ZMJWUyR74J9JLqyFpoanUx0jYWRTzfMqF+XA6YHLKfuJDR91Bj/1yUPtF4d0RcGYpcS2T4s+cR8BxbI2oTJQzx+LIHsG7HCLhZH3yWQvZ5ZpxGKeh3oDyYvN5v7H8hrW43CFp4tAAAAAElFTkSuQmCC) no-repeat;
+}
+
+.season-slideer-wrapper .season-slider-list span:last-child {
+    margin-right: 0;
+    border-right: 1px solid #e5e9ef;
+    border-radius: 0 4px 4px 0;
+}
+.season-slideer-wrapper .season-slider-list span:last-child::after {
+	display:none
+}
+/***播放页**/
+.player-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+    height: 56.26667vw;
+}
+.player-back-btn {
+    line-height: 0;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    z-index: 15;
+    font-size: 20px;
+    color: #fff;
+}
+@media (min-width: 1414px){
+.player-wrap {
+    height: 720px;
+}
+}
+
+.player-wrap #player-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.moe-player-wrap, .moe-player-wrap .player-video {
+    width: 100%;
+    height: 100%;
+}
+.moe-player-wrap {
+    position: relative;
+    background-color: #222;
+}
+.van-grid-item--active [class*=van-hairline]::after{
+    border: 1px solid #fb7299;
+}
+.van-grid-item--active .van-grid-item__text{
+    color:#fb7299
+}
+.g-box-title {
+    margin: 0;
+    padding: 16px 10px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+.van-margin-top{
+    margin-top:10px;
+    background: #fff;
+}
+.van-grid-item {
+    flex-basis: 33.3333%;
+}
+.van-clearfix .van-grid-item__content {
+    background-color: transparent;
+    padding: 8px;
+}
+.video-list .video-item-title{
+    margin-top: 10px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+}
+
+.video-list .video-item-tag {
+    display: block;
+    width: auto;
+    max-width: 84%;
+    font-size: 12px;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background-color: rgba(0,0,0,.65);
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.van-tabbar-item--active, .van-tabbar-item--active .van-icon {
+    color: #ff5f00;
+}
+.van-tabbar{
+    z-index:99;
+}
+.bg-alpha {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);
+    background-size: cover;
+    background-position: center center;
+    opacity: .88;
+}
+.rank-top10 {
+    margin-right: 5px;
+    padding: 0 5px 0px;
+    color: #fff;
+    background: #00a1d6;
+}
+.slider-item {
+    flex-shrink: 0;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.slider-item {
+    position: relative;
+    font-size: 16px;
+    align-items: flex-start;
+    justify-content: left;
+    flex-wrap: wrap;
+    color: #fff;
+    text-shadow: rgba(0,0,0,.9) 0 2px 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    line-height: 2rem;
+    color: #fff;
+    background-color: rgba(64,64,64,.6);
+}
+@media (min-width: 567px) {
+    .van-grid-item {flex-basis: 25%;}
+}
+
+@media (min-width: 735px) {
+    .van-grid-item {flex-basis: 25%;}
+}
