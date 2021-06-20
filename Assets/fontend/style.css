@@ -5153,7 +5153,7 @@ code, kbd, tt, var {
     color:#fff
 } 
 .post-style-2 .user-tools i{
-    color:#fff
+    color:#inherit
 }
 .post-style-2 .user-tools button.none i{
     color:#333
