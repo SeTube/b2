@@ -1975,7 +1975,6 @@
     position: relative;
 }
 .top-user-box-drop a.top-my-home p span{
-    color:inherit;
     display: flex;
     align-items: center;
 }
